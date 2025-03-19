@@ -16,7 +16,7 @@ const WeatherDetails = ({ forecast }) => {
           <div key={index} className="forecast-box">
             <p>{new Date(date).toDateString()}</p>
             <WeatherIcon weatherCode={forecast.daily.weathercode[index]} />
-            <p>Min:Weather {Math.round(forecast.daily.temperature_2m_min[index])}°C</p>
+            <p>Min: {Math.round(forecast.daily.temperature_2m_min[index])}°C</p>
             <p>Max: {Math.round(forecast.daily.temperature_2m_max[index])}°C</p>
           </div>
         ))}
